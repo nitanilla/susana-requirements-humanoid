@@ -1,0 +1,1 @@
+arquivos .txt abrir com http://www.cin.ufpe.br/~jhcp/pistar/tool/
