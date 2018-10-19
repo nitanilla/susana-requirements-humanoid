@@ -84,7 +84,7 @@
         },
         {
           "id": "6358e540-51ec-408d-bed7-cbe926e719f4",
-          "text": "Organizar por tipo padrão",
+          "text": "Organizar por tipo padr�o",
           "type": "istar.Task",
           "x": 1431,
           "y": 813
@@ -206,7 +206,7 @@
     },
     {
       "id": "e7cf6ebd-b5ec-41a2-8591-4471d78a5c39",
-      "text": "Fornecedor de Energía",
+      "text": "Fornecedor de Energ�a",
       "type": "istar.Actor",
       "x": 36,
       "y": 27,
@@ -225,7 +225,7 @@
     },
     {
       "id": "1b52bade-f3de-4079-a9b3-ef1095806918",
-      "text": "Situação dos Alimentos",
+      "text": "Situa��o dos Alimentos",
       "type": "istar.Resource",
       "x": 62,
       "y": 356,
@@ -279,7 +279,7 @@
     },
     {
       "id": "0ddc8e9a-b0e7-4a0e-ac44-56c41a7ecad6",
-      "text": "Opções de alimentação",
+      "text": "Op��es de alimenta��o",
       "type": "istar.Resource",
       "x": 2062,
       "y": 1300,
@@ -288,7 +288,7 @@
     },
     {
       "id": "cedcc47d-2043-483c-821e-3c7cf9852b39",
-      "text": "Bandeja de recepção frutas/legumes",
+      "text": "Bandeja de recep��o frutas/legumes",
       "type": "istar.Resource",
       "x": 947,
       "y": 18,
@@ -297,7 +297,7 @@
     },
     {
       "id": "3dcb687b-f746-4e43-8af4-4438ffcd93fb",
-      "text": "Bandeja de recepção vazía",
+      "text": "Bandeja de recep��o vaz�a",
       "type": "istar.Resource",
       "x": 1033,
       "y": 95,
@@ -315,7 +315,7 @@
     },
     {
       "id": "a3b8714a-addd-4130-81ea-4a991d79831f",
-      "text": "Bandeja de pacote vazía",
+      "text": "Bandeja de pacote vaz�a",
       "type": "istar.Resource",
       "x": 1267,
       "y": 178,
@@ -333,7 +333,7 @@
     },
     {
       "id": "04ac53b1-7000-4e33-afaf-4e1b46fb7cd8",
-      "text": "Informação sobre a limpeza dos alimentos",
+      "text": "Informa��o sobre a limpeza dos alimentos",
       "type": "istar.Resource",
       "x": 563,
       "y": 409,
@@ -378,7 +378,7 @@
     },
     {
       "id": "42e58dbc-8584-409b-8ee4-5d3d683afb37",
-      "text": "Que alimentação sejam disponivel",
+      "text": "Que alimenta��o sejam disponivel",
       "type": "istar.Goal",
       "x": 2006,
       "y": 1239,
@@ -387,7 +387,7 @@
     },
     {
       "id": "c4045602-3d56-43bc-bfb3-365fef3bf02d",
-      "text": "Bandeja de recepçao vazia",
+      "text": "Bandeja de recep�ao vazia",
       "type": "istar.Resource",
       "x": 666,
       "y": 251,
@@ -450,7 +450,7 @@
     },
     {
       "id": "cf12c7c6-943a-41bb-9247-0cc5fa5ada3d",
-      "text": "Bandejas de pacotes vazías",
+      "text": "Bandejas de pacotes vaz�as",
       "type": "istar.Resource",
       "x": 1084,
       "y": 490,
@@ -459,7 +459,7 @@
     },
     {
       "id": "39e87f54-f241-493b-a21b-99979c0f2f7d",
-      "text": "Parámetros de empacotamento",
+      "text": "Par�metros de empacotamento",
       "type": "istar.Resource",
       "x": 712,
       "y": 930,
@@ -477,7 +477,7 @@
     },
     {
       "id": "800b49b7-f932-4d50-be10-b8cf2fc61dfc",
-      "text": "Eficiencia [sincronização]",
+      "text": "Eficiencia [sincroniza��o]",
       "type": "istar.Quality",
       "x": 1603,
       "y": 435,
