@@ -1,0 +1,14 @@
+﻿1. Após limpeza, FeL sao disponibilizados numa bandeja com divisões, de tal forma que as FeL estejam separados por tipo. 
+
+2. A interfaz empacotador recebe as FeL para coloca-los numa bdj de trabalho que será enviada ao Organizador Empacotador
+
+3. O Organizador Empacotador vai organizar as FeL segundo os seguintes criterios: amadurezimento e ..
+3.a. Para amadurecimento um sensor terá que reconhecer os estado de cada unidad de FeL para depois agrupalos segundo os seguintes niveis de consumo: ate 2 dias, de aqui a 3/4 dias, de aqui a 5/7 dias.
+3.b. Os alimentos serão enviados na bdj de trabalho com os grupos de FeL para o Embrulador Empacotador
+
+4. O Embrulhador recebe a bdj com FeL organizada para empacotar cada grupo de alimentos segundo o nivel de consumo. 
+4.a. Os alimentos são enviados para o Refrigerador para que as FeL sejam colocados na melhor disposição que garanta a durabilidade das FeL
+
+5.  Quando um Morador quiser consumir por exemplo: banana e maça, or Refrigerador ira a disponibilizar por defeito a banana e maça com nivel de consumo mais proximo. Se o morador for requerir explicitamente uma banana não tão amadurecida, a Susana irá a perguntar o nivel desejado.
+
+
