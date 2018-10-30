@@ -1,0 +1,111 @@
+{
+  "actors": [
+    {
+      "id": "f39bbe23-b303-4ca3-8dee-a517d32e186f",
+      "text": "Morador",
+      "type": "istar.Actor",
+      "x": 306,
+      "y": 139,
+      "nodes": []
+    },
+    {
+      "id": "b651b365-2886-4d98-a2dd-901181b355cc",
+      "text": "Sensores",
+      "type": "istar.Agent",
+      "x": 709,
+      "y": 675,
+      "nodes": []
+    },
+    {
+      "id": "8d06d7ec-793c-4f7b-962c-89db4a9c931c",
+      "text": "Organizador Empacotador",
+      "type": "istar.Role",
+      "x": 761,
+      "y": 364,
+      "nodes": []
+    },
+    {
+      "id": "a794fbf6-3e00-4d51-aa72-9517573f5751",
+      "text": "Refrigerador",
+      "type": "istar.Actor",
+      "x": 1039,
+      "y": 132,
+      "nodes": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "9dba7e7e-0ef9-4394-9ef2-84edba600b91",
+      "text": "Que FeL sejam organizados (later binding)",
+      "type": "istar.Goal",
+      "x": 723,
+      "y": 32,
+      "source": "f39bbe23-b303-4ca3-8dee-a517d32e186f",
+      "target": "a794fbf6-3e00-4d51-aa72-9517573f5751"
+    },
+    {
+      "id": "ea052f21-8c2e-4a2a-bab2-d80bbaa3570e",
+      "text": "Que as FeL sejam organizados (early binding)",
+      "type": "istar.Goal",
+      "x": 424,
+      "y": 331,
+      "source": "f39bbe23-b303-4ca3-8dee-a517d32e186f",
+      "target": "8d06d7ec-793c-4f7b-962c-89db4a9c931c"
+    },
+    {
+      "id": "cd87c205-f7fb-4c8a-90e7-b75c78a8d6bc",
+      "text": "Informações de durabilidade/dimensões de FeL",
+      "type": "istar.Resource",
+      "x": 945,
+      "y": 536,
+      "source": "8d06d7ec-793c-4f7b-962c-89db4a9c931c",
+      "target": "b651b365-2886-4d98-a2dd-901181b355cc"
+    }
+  ],
+  "links": [
+    {
+      "id": "92f90f5d-8cff-4d2b-b389-a1cd062b3ec2",
+      "type": "istar.DependencyLink",
+      "source": "f39bbe23-b303-4ca3-8dee-a517d32e186f",
+      "target": "9dba7e7e-0ef9-4394-9ef2-84edba600b91"
+    },
+    {
+      "id": "21aacaa5-dd9e-476f-a444-b9237d9698d1",
+      "type": "istar.DependencyLink",
+      "source": "9dba7e7e-0ef9-4394-9ef2-84edba600b91",
+      "target": "a794fbf6-3e00-4d51-aa72-9517573f5751"
+    },
+    {
+      "id": "bbcb4fe6-2310-4fc3-95b1-c6340f4a1fd9",
+      "type": "istar.DependencyLink",
+      "source": "f39bbe23-b303-4ca3-8dee-a517d32e186f",
+      "target": "ea052f21-8c2e-4a2a-bab2-d80bbaa3570e"
+    },
+    {
+      "id": "6bddfec1-62bf-40ce-858e-b95de30d9b04",
+      "type": "istar.DependencyLink",
+      "source": "ea052f21-8c2e-4a2a-bab2-d80bbaa3570e",
+      "target": "8d06d7ec-793c-4f7b-962c-89db4a9c931c"
+    },
+    {
+      "id": "f96d2288-64fa-416e-a132-8f76bd6cb265",
+      "type": "istar.DependencyLink",
+      "source": "8d06d7ec-793c-4f7b-962c-89db4a9c931c",
+      "target": "cd87c205-f7fb-4c8a-90e7-b75c78a8d6bc"
+    },
+    {
+      "id": "d10c5f99-d2ec-4b9b-8c85-97b8abaff28d",
+      "type": "istar.DependencyLink",
+      "source": "cd87c205-f7fb-4c8a-90e7-b75c78a8d6bc",
+      "target": "b651b365-2886-4d98-a2dd-901181b355cc"
+    }
+  ],
+  "display": {},
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 30 Oct 2018 18:55:47 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300
+  }
+}
