@@ -1,0 +1,162 @@
+{
+  "actors": [
+    {
+      "id": "6078c291-d9c0-43ad-82a7-e940c75e6e57",
+      "text": "Morador",
+      "type": "istar.Actor",
+      "x": 211,
+      "y": 594,
+      "nodes": []
+    },
+    {
+      "id": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af",
+      "text": "Dispositivo de Limpeza",
+      "type": "istar.Actor",
+      "x": 290,
+      "y": 84,
+      "nodes": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "151b96ad-eb4a-4552-8c63-739bfff20be6",
+      "text": "Sustentavel",
+      "type": "istar.Quality",
+      "x": 272,
+      "y": 401,
+      "source": "6078c291-d9c0-43ad-82a7-e940c75e6e57",
+      "target": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af"
+    },
+    {
+      "id": "1b52bade-f3de-4079-a9b3-ef1095806918",
+      "text": "Situação dos Alimentos",
+      "type": "istar.Resource",
+      "x": 27,
+      "y": 387,
+      "source": "6078c291-d9c0-43ad-82a7-e940c75e6e57",
+      "target": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af"
+    },
+    {
+      "id": "a973b7ad-d586-4c2a-9266-ec84de602d66",
+      "text": "Parametros de Limpeza",
+      "type": "istar.Resource",
+      "x": 156,
+      "y": 388,
+      "source": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af",
+      "target": "6078c291-d9c0-43ad-82a7-e940c75e6e57"
+    },
+    {
+      "id": "a274c6e6-d996-4f4a-8123-eb5c380b4884",
+      "text": "Que a cozinha X de equipamento de uso de limpeza",
+      "type": "istar.Goal",
+      "x": 404,
+      "y": 389,
+      "source": "6078c291-d9c0-43ad-82a7-e940c75e6e57",
+      "target": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af"
+    },
+    {
+      "id": "04ac53b1-7000-4e33-afaf-4e1b46fb7cd8",
+      "text": "Informação sobre a limpeza dos alimentos",
+      "type": "istar.Resource",
+      "x": 529,
+      "y": 420,
+      "source": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af",
+      "target": "6078c291-d9c0-43ad-82a7-e940c75e6e57"
+    }
+  ],
+  "links": [
+    {
+      "id": "807a0e39-c85b-443c-9420-1e793ceb3d88",
+      "type": "istar.DependencyLink",
+      "source": "6078c291-d9c0-43ad-82a7-e940c75e6e57",
+      "target": "151b96ad-eb4a-4552-8c63-739bfff20be6"
+    },
+    {
+      "id": "6589be1a-1eaf-40b4-bbed-47b1335bcd3c",
+      "type": "istar.DependencyLink",
+      "source": "151b96ad-eb4a-4552-8c63-739bfff20be6",
+      "target": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af"
+    },
+    {
+      "id": "f8f18146-9566-4b2d-beb7-68a3495d1e7c",
+      "type": "istar.DependencyLink",
+      "source": "6078c291-d9c0-43ad-82a7-e940c75e6e57",
+      "target": "1b52bade-f3de-4079-a9b3-ef1095806918"
+    },
+    {
+      "id": "09ceb633-cb89-4a42-824d-b7231f9753d6",
+      "type": "istar.DependencyLink",
+      "source": "1b52bade-f3de-4079-a9b3-ef1095806918",
+      "target": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af"
+    },
+    {
+      "id": "7127b500-179c-4ba4-b19a-e6aa7e7c9243",
+      "type": "istar.DependencyLink",
+      "source": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af",
+      "target": "a973b7ad-d586-4c2a-9266-ec84de602d66"
+    },
+    {
+      "id": "8ace4b5b-6d09-4e1c-9f92-af3fd8de23ae",
+      "type": "istar.DependencyLink",
+      "source": "a973b7ad-d586-4c2a-9266-ec84de602d66",
+      "target": "6078c291-d9c0-43ad-82a7-e940c75e6e57"
+    },
+    {
+      "id": "9af4b7f1-1035-4ead-a1f6-c4c58ba709a4",
+      "type": "istar.DependencyLink",
+      "source": "6078c291-d9c0-43ad-82a7-e940c75e6e57",
+      "target": "a274c6e6-d996-4f4a-8123-eb5c380b4884"
+    },
+    {
+      "id": "61aa287d-0fb8-475c-a459-a8368cb4789a",
+      "type": "istar.DependencyLink",
+      "source": "a274c6e6-d996-4f4a-8123-eb5c380b4884",
+      "target": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af"
+    },
+    {
+      "id": "32bf46be-0a7d-4fce-b843-fcf041252f6c",
+      "type": "istar.DependencyLink",
+      "source": "2e5aaf71-85d1-4e74-b14c-ffa47d2a18af",
+      "target": "04ac53b1-7000-4e33-afaf-4e1b46fb7cd8"
+    },
+    {
+      "id": "866fe81f-49e4-4326-96d4-17f195aff30a",
+      "type": "istar.DependencyLink",
+      "source": "04ac53b1-7000-4e33-afaf-4e1b46fb7cd8",
+      "target": "6078c291-d9c0-43ad-82a7-e940c75e6e57"
+    }
+  ],
+  "display": {
+    "6589be1a-1eaf-40b4-bbed-47b1335bcd3c": {
+      "vertices": [
+        {
+          "x": 343,
+          "y": 296
+        }
+      ]
+    },
+    "09ceb633-cb89-4a42-824d-b7231f9753d6": {
+      "vertices": [
+        {
+          "x": 141,
+          "y": 287
+        }
+      ]
+    },
+    "32bf46be-0a7d-4fce-b843-fcf041252f6c": {
+      "vertices": [
+        {
+          "x": 486,
+          "y": 309
+        }
+      ]
+    }
+  },
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Thu, 01 Nov 2018 14:25:32 GMT",
+  "diagram": {
+    "width": 700,
+    "height": 800
+  }
+}
