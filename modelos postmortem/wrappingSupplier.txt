@@ -1,0 +1,292 @@
+{
+  "actors": [
+    {
+      "id": "3589ee55-603d-41ee-8bf1-2b2a54498def",
+      "text": "Wrapping supplier",
+      "type": "istar.Actor",
+      "x": 151,
+      "y": 43,
+      "nodes": [
+        {
+          "id": "8d716a61-1ca4-44f4-934c-26166ea44d11",
+          "text": "alternative wrapping option",
+          "type": "istar.Task",
+          "x": 250,
+          "y": 112
+        },
+        {
+          "id": "53377496-bb01-4f96-b9c8-d7c82e45461b",
+          "text": "Context awareness",
+          "type": "istar.QualityAwareness",
+          "x": 216,
+          "y": 65
+        },
+        {
+          "id": "887575d2-9bfd-40e2-b76b-975a24471558",
+          "text": "Physical environment",
+          "type": "istar.QualityAwareness",
+          "x": 158,
+          "y": 146
+        },
+        {
+          "id": "eaceba05-d40b-40e4-90c1-0b3283d705b1",
+          "text": "Monitoring",
+          "type": "istar.TaskAwareness",
+          "x": 158,
+          "y": 218
+        },
+        {
+          "id": "b4f4d59f-1d78-4513-99e8-f56783c475a7",
+          "text": "Check for wrapping material",
+          "type": "istar.TaskAwareness",
+          "x": 245,
+          "y": 176
+        },
+        {
+          "id": "2864d668-b7a8-4259-a82b-c2a9db62a11d",
+          "text": "Package be chosen",
+          "type": "istar.Goal",
+          "x": 313,
+          "y": 52
+        },
+        {
+          "id": "1814730c-78b8-4f18-aff5-46fd8e480b5e",
+          "text": "use laminated foil",
+          "type": "istar.Task",
+          "x": 334,
+          "y": 139
+        },
+        {
+          "id": "8021207f-b9d5-4e40-8030-86f75ad050e5",
+          "text": "material stock",
+          "type": "istar.Resource",
+          "x": 336,
+          "y": 210
+        },
+        {
+          "id": "b3fda1ca-21b9-42c1-a0d8-bb60ced4e906",
+          "text": "Sensor measuring",
+          "type": "istar.TaskAwareness",
+          "x": 157,
+          "y": 287
+        },
+        {
+          "id": "f531fb8e-54e2-44ac-8bba-6bd3cc6fa27e",
+          "text": "Humidity",
+          "type": "istar.ResourceAwareness",
+          "x": 193,
+          "y": 349
+        },
+        {
+          "id": "1f441c28-37b9-4ed7-a926-e85214b5d50f",
+          "text": "Regulate humidity",
+          "type": "istar.Task",
+          "x": 349,
+          "y": 292
+        },
+        {
+          "id": "37928627-9f59-42b9-a4e1-35e2c7f952fd",
+          "text": "Social-context awareness",
+          "type": "istar.QualityAwareness",
+          "x": 407,
+          "y": 64
+        },
+        {
+          "id": "1a4fd738-8def-4dd3-8216-5ccd902dd88e",
+          "text": "Norms awareness",
+          "type": "istar.QualityAwareness",
+          "x": 428,
+          "y": 164
+        },
+        {
+          "id": "00c7f2d3-e0a2-4733-b76f-d3a725f3e7be",
+          "text": "keep moisture balance of materials",
+          "type": "istar.TaskAwareness",
+          "x": 426,
+          "y": 239
+        },
+        {
+          "id": "77990486-8174-4914-9cfa-90205204249c",
+          "text": "Stock is kept",
+          "type": "istar.GoalAwareness",
+          "x": 247,
+          "y": 246
+        },
+        {
+          "id": "3b4473e2-3af6-4807-9fc5-f49013a582e4",
+          "text": "Update stock",
+          "type": "istar.Task",
+          "x": 258,
+          "y": 308
+        }
+      ]
+    },
+    {
+      "id": "a501b9d1-6598-4eed-9a77-01de5557c727",
+      "type": "istar.Role",
+      "x": 98,
+      "y": 489,
+      "nodes": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "fdbb840f-8eaf-4905-8c5a-789b03e7f369",
+      "text": "Relative humidity from 30º to 75º",
+      "type": "istar.Resource",
+      "x": 295,
+      "y": 410,
+      "source": "00c7f2d3-e0a2-4733-b76f-d3a725f3e7be",
+      "target": "a501b9d1-6598-4eed-9a77-01de5557c727"
+    }
+  ],
+  "links": [
+    {
+      "id": "8c1e5ef7-967e-44f3-b9c0-01feb2afd124",
+      "type": "istar.OrRefinementLink",
+      "source": "1814730c-78b8-4f18-aff5-46fd8e480b5e",
+      "target": "2864d668-b7a8-4259-a82b-c2a9db62a11d"
+    },
+    {
+      "id": "5a17200b-37a8-4a0c-baaf-8ea71e17ff42",
+      "type": "istar.OrRefinementLink",
+      "source": "8d716a61-1ca4-44f4-934c-26166ea44d11",
+      "target": "2864d668-b7a8-4259-a82b-c2a9db62a11d"
+    },
+    {
+      "id": "343ead6e-0507-442b-8bba-a14b57771657",
+      "type": "istar.OrRefinementLink",
+      "source": "eaceba05-d40b-40e4-90c1-0b3283d705b1",
+      "target": "887575d2-9bfd-40e2-b76b-975a24471558"
+    },
+    {
+      "id": "bb463055-ffd6-43b1-9ed1-d1635f6b001d",
+      "type": "istar.AwarenessLink",
+      "source": "b4f4d59f-1d78-4513-99e8-f56783c475a7",
+      "target": "8d716a61-1ca4-44f4-934c-26166ea44d11"
+    },
+    {
+      "id": "0b73aa76-53d3-4f31-ae68-9bda4236b0e5",
+      "type": "istar.AndRefinementLink",
+      "source": "8021207f-b9d5-4e40-8030-86f75ad050e5",
+      "target": "1814730c-78b8-4f18-aff5-46fd8e480b5e"
+    },
+    {
+      "id": "9802472f-f2a0-4d31-a2d0-f17a15c55394",
+      "type": "istar.ContributionLink",
+      "source": "887575d2-9bfd-40e2-b76b-975a24471558",
+      "target": "53377496-bb01-4f96-b9c8-d7c82e45461b",
+      "label": "help"
+    },
+    {
+      "id": "f18f3205-2c9e-41b5-bc56-2599db927e9a",
+      "type": "istar.AndRefinementLink",
+      "source": "b3fda1ca-21b9-42c1-a0d8-bb60ced4e906",
+      "target": "eaceba05-d40b-40e4-90c1-0b3283d705b1"
+    },
+    {
+      "id": "33fd2787-bcf0-4589-88c1-32e23f0ac017",
+      "type": "istar.AndRefinementLink",
+      "source": "f531fb8e-54e2-44ac-8bba-6bd3cc6fa27e",
+      "target": "b3fda1ca-21b9-42c1-a0d8-bb60ced4e906"
+    },
+    {
+      "id": "b842b487-8385-4ef2-8e8b-35ffdee59892",
+      "type": "istar.OrRefinementLink",
+      "source": "1f441c28-37b9-4ed7-a926-e85214b5d50f",
+      "target": "8021207f-b9d5-4e40-8030-86f75ad050e5"
+    },
+    {
+      "id": "6d9b014a-928e-4024-bfc3-46a4f7279fbc",
+      "type": "istar.DependencyLink",
+      "source": "00c7f2d3-e0a2-4733-b76f-d3a725f3e7be",
+      "target": "fdbb840f-8eaf-4905-8c5a-789b03e7f369"
+    },
+    {
+      "id": "687a8627-132b-46e1-b574-437f091e84fe",
+      "type": "istar.DependencyLink",
+      "source": "fdbb840f-8eaf-4905-8c5a-789b03e7f369",
+      "target": "a501b9d1-6598-4eed-9a77-01de5557c727"
+    },
+    {
+      "id": "c983388b-3886-4f8d-8f1a-8a76ed023f0a",
+      "type": "istar.AwarenessLink",
+      "source": "00c7f2d3-e0a2-4733-b76f-d3a725f3e7be",
+      "target": "1f441c28-37b9-4ed7-a926-e85214b5d50f"
+    },
+    {
+      "id": "fac96dac-277d-4c44-b283-54df2114197b",
+      "type": "istar.OrRefinementLink",
+      "source": "00c7f2d3-e0a2-4733-b76f-d3a725f3e7be",
+      "target": "1a4fd738-8def-4dd3-8216-5ccd902dd88e"
+    },
+    {
+      "id": "598a46b4-3181-4aa4-9e3e-f0cbe6c06ee0",
+      "type": "istar.ContributionLink",
+      "source": "1a4fd738-8def-4dd3-8216-5ccd902dd88e",
+      "target": "37928627-9f59-42b9-a4e1-35e2c7f952fd",
+      "label": "help"
+    },
+    {
+      "id": "b5ef8e8a-1a2d-41b9-b63d-c510d307c222",
+      "type": "istar.OrRefinementLink",
+      "source": "3b4473e2-3af6-4807-9fc5-f49013a582e4",
+      "target": "8021207f-b9d5-4e40-8030-86f75ad050e5"
+    },
+    {
+      "id": "7b164bc8-1438-46f1-a16d-a7a71834e7e1",
+      "type": "istar.OrRefinementLink",
+      "source": "3b4473e2-3af6-4807-9fc5-f49013a582e4",
+      "target": "77990486-8174-4914-9cfa-90205204249c"
+    },
+    {
+      "id": "131cae27-6dd3-48ce-ad75-433180b22844",
+      "type": "istar.OrRefinementLink",
+      "source": "b4f4d59f-1d78-4513-99e8-f56783c475a7",
+      "target": "887575d2-9bfd-40e2-b76b-975a24471558"
+    },
+    {
+      "id": "70f4d588-bca8-4263-8a8b-e200fda558fe",
+      "type": "istar.AndRefinementLink",
+      "source": "77990486-8174-4914-9cfa-90205204249c",
+      "target": "b4f4d59f-1d78-4513-99e8-f56783c475a7"
+    }
+  ],
+  "display": {
+    "9802472f-f2a0-4d31-a2d0-f17a15c55394": {
+      "vertices": [
+        {
+          "x": 182,
+          "y": 119
+        }
+      ]
+    },
+    "6d9b014a-928e-4024-bfc3-46a4f7279fbc": {
+      "vertices": [
+        {
+          "x": 482,
+          "y": 320
+        },
+        {
+          "x": 447,
+          "y": 358
+        }
+      ]
+    },
+    "131cae27-6dd3-48ce-ad75-433180b22844": {
+      "vertices": [
+        {
+          "x": 228,
+          "y": 224
+        }
+      ]
+    }
+  },
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Fri, 06 Sep 2019 18:52:51 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300
+  }
+}

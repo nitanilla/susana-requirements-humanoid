@@ -1,0 +1,176 @@
+{
+  "actors": [
+    {
+      "id": "3589ee55-603d-41ee-8bf1-2b2a54498def",
+      "text": "Packer organizer",
+      "type": "istar.Actor",
+      "x": 121,
+      "y": 48,
+      "nodes": [
+        {
+          "id": "8d716a61-1ca4-44f4-934c-26166ea44d11",
+          "text": "Basic organization",
+          "type": "istar.Task",
+          "x": 158,
+          "y": 130
+        },
+        {
+          "id": "f5db0b1c-c13a-4441-a15a-9467df8d28da",
+          "text": "Arrange F&V by inhabitant",
+          "type": "istar.Task",
+          "x": 313,
+          "y": 67
+        },
+        {
+          "id": "53377496-bb01-4f96-b9c8-d7c82e45461b",
+          "text": "Awareness",
+          "type": "istar.QualityAwareness",
+          "x": 133,
+          "y": 196
+        },
+        {
+          "id": "887575d2-9bfd-40e2-b76b-975a24471558",
+          "text": "Time",
+          "type": "istar.QualityAwareness",
+          "x": 130,
+          "y": 282
+        },
+        {
+          "id": "eaceba05-d40b-40e4-90c1-0b3283d705b1",
+          "text": "Calculate GST time",
+          "type": "istar.TaskAwareness",
+          "x": 157,
+          "y": 364
+        },
+        {
+          "id": "928f9d9f-52b7-4305-91ba-48efce6c4bfa",
+          "text": "Calculate with atomic clock",
+          "type": "istar.TaskAwareness",
+          "x": 294,
+          "y": 335
+        },
+        {
+          "id": "5efe2060-b4eb-45d7-b8b8-9a57c63831e1",
+          "text": "Track sensors measuring time",
+          "type": "istar.TaskAwareness",
+          "x": 257,
+          "y": 273
+        },
+        {
+          "id": "b4f4d59f-1d78-4513-99e8-f56783c475a7",
+          "text": "Track F&V arrival time on tray",
+          "type": "istar.TaskAwareness",
+          "x": 248,
+          "y": 215
+        },
+        {
+          "id": "2864d668-b7a8-4259-a82b-c2a9db62a11d",
+          "text": "F&V can be combined",
+          "type": "istar.Goal",
+          "x": 357,
+          "y": 127
+        },
+        {
+          "id": "3f6e0fb5-bf67-4a79-aebc-bb3116e546d7",
+          "text": "Prioritize perishable foods",
+          "type": "istar.Task",
+          "x": 260,
+          "y": 156
+        },
+        {
+          "id": "04cd0b91-6082-4725-a369-22feb2d7c880",
+          "text": "F&V be organized",
+          "type": "istar.Goal",
+          "x": 189,
+          "y": 63
+        },
+        {
+          "id": "1814730c-78b8-4f18-aff5-46fd8e480b5e",
+          "text": "arrange w/o sensor measurement",
+          "type": "istar.Task",
+          "x": 357,
+          "y": 204
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "16f6167d-d9cd-4c5a-a1a4-bdcb51d9d7c0",
+      "type": "istar.AndRefinementLink",
+      "source": "887575d2-9bfd-40e2-b76b-975a24471558",
+      "target": "53377496-bb01-4f96-b9c8-d7c82e45461b"
+    },
+    {
+      "id": "02eed18a-5325-468a-9015-727e1693532a",
+      "type": "istar.ContributionLink",
+      "source": "eaceba05-d40b-40e4-90c1-0b3283d705b1",
+      "target": "887575d2-9bfd-40e2-b76b-975a24471558",
+      "label": "help"
+    },
+    {
+      "id": "28fdc81a-6ab7-4bdc-a2ec-43766a471e24",
+      "type": "istar.ContributionLink",
+      "source": "928f9d9f-52b7-4305-91ba-48efce6c4bfa",
+      "target": "887575d2-9bfd-40e2-b76b-975a24471558",
+      "label": "make"
+    },
+    {
+      "id": "22bb46e1-3d1f-4567-adcf-59e849998f67",
+      "type": "istar.OrRefinementLink",
+      "source": "5efe2060-b4eb-45d7-b8b8-9a57c63831e1",
+      "target": "887575d2-9bfd-40e2-b76b-975a24471558"
+    },
+    {
+      "id": "42332527-3e8f-4796-ac8a-2b72918ff115",
+      "type": "istar.OrRefinementLink",
+      "source": "b4f4d59f-1d78-4513-99e8-f56783c475a7",
+      "target": "887575d2-9bfd-40e2-b76b-975a24471558"
+    },
+    {
+      "id": "941a6368-e219-4482-9118-438ddfee235a",
+      "type": "istar.AndRefinementLink",
+      "source": "3f6e0fb5-bf67-4a79-aebc-bb3116e546d7",
+      "target": "f5db0b1c-c13a-4441-a15a-9467df8d28da"
+    },
+    {
+      "id": "64422408-b845-4254-ab80-9d8e0686b295",
+      "type": "istar.OrRefinementLink",
+      "source": "8d716a61-1ca4-44f4-934c-26166ea44d11",
+      "target": "04cd0b91-6082-4725-a369-22feb2d7c880"
+    },
+    {
+      "id": "9070d8a1-2576-4c1a-bebc-d77b7c48ddae",
+      "type": "istar.OrRefinementLink",
+      "source": "f5db0b1c-c13a-4441-a15a-9467df8d28da",
+      "target": "04cd0b91-6082-4725-a369-22feb2d7c880"
+    },
+    {
+      "id": "469ab78c-1d6e-41d9-a94d-702365cd35f6",
+      "type": "istar.AndRefinementLink",
+      "source": "2864d668-b7a8-4259-a82b-c2a9db62a11d",
+      "target": "f5db0b1c-c13a-4441-a15a-9467df8d28da"
+    },
+    {
+      "id": "03d9f726-f990-49d0-8111-0c9579bd3dce",
+      "type": "istar.AwarenessLink",
+      "source": "5efe2060-b4eb-45d7-b8b8-9a57c63831e1",
+      "target": "1814730c-78b8-4f18-aff5-46fd8e480b5e"
+    },
+    {
+      "id": "cb5fea53-0e74-438a-a1ce-0a09e8debf39",
+      "type": "istar.OrRefinementLink",
+      "source": "1814730c-78b8-4f18-aff5-46fd8e480b5e",
+      "target": "2864d668-b7a8-4259-a82b-c2a9db62a11d"
+    }
+  ],
+  "display": {},
+  "tool": "pistar.1.2.0",
+  "istar": "2.0",
+  "saveDate": "Fri, 06 Sep 2019 16:51:03 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300
+  }
+}
