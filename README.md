@@ -4,7 +4,7 @@ Modelando uma humanóide que será capaz de criar requisitos de software para os
 
 ## Referencing
 If you need to mention, please reference as: 
-Portugal, R.L.Q, Cavalcanti, R., and Leite, J.C.S. Modelando os Requisitos para Susana: Requisitos para Uma Humanoide Construtora de Requisitos
+Portugal, R.L.Q, Cavalcanti, R., and Leite, J.C.S. Modelando os Requisitos para Susana: Requisitos para Uma Humanoide Construtora de Requisitos. In GitHub Repository: susana-requirements-humanoid.
 
 ## Creators
 [@nitanilla](https://github.com/nitanilla)
