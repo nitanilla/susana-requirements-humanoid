@@ -1,5 +1,5 @@
 # Susana-requirements-humanoid
-modelling a humanoid that will be able to create software requirements for inhabitants in future homes
+Modelando uma humanóide que será capaz de criar requisitos de software para os habitantes das casas futuras.
 
 
 ## Referencing
