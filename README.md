@@ -1,4 +1,4 @@
-# Modelando os Requisitos para Susana: Requisitos para Uma Humanoide Construtora de Requisitos
+# Susana: Requisitos para Uma Humanoide Construtora de Requisitos
 
 Este é o repositorio para a modelagem colaborativa de uma humanóide que será capaz de criar requisitos de software para os habitantes das casas futuras.
 
